@@ -1,0 +1,17 @@
+{"properties": [
+  {
+    "name": "top.lcmatrix.fw.sso.urlEncoding",
+    "type": "java.lang.String",
+    "description": "urlEncoding"
+  },
+  {
+    "name": "top.lcmatrix.fw.sso.myBaseUrl",
+    "type": "java.lang.String",
+    "description": "本服务基地址"
+  },
+  {
+    "name": "top.lcmatrix.fw.sso.serverBaseUrl",
+    "type": "java.lang.String",
+    "description": "sso-server基地址"
+  }
+]}
