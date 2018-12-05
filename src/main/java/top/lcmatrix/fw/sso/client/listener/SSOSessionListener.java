@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSessionListener;
 
 import top.lcmatrix.fw.sso.client.Constant;
 import top.lcmatrix.fw.sso.client.entity.TokenObject;
+import top.lcmatrix.fw.sso.client.interceptor.SSOInterceptor;
 
 /**
  * <p>本服务的登录失效时，移除存储的相关数据</p>
@@ -31,5 +32,6 @@ public class SSOSessionListener implements HttpSessionListener{
 			ServletContext servletContext = session.getServletContext();
 			servletContext.removeAttribute(Constant.CONTEXT_ATTR_TOKEN_PREFIX + tokenObject.getToken());
 		}
+		SSOInterceptor.clearCookie();
 	}
 }

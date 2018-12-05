@@ -176,4 +176,8 @@ public class SSOInterceptor implements HandlerInterceptor {
 		session.setAttribute(Constant.SESSION_TOKEN, tokenObject);
 		request.getServletContext().setAttribute(Constant.CONTEXT_ATTR_TOKEN_PREFIX + tokenObject.getToken(), session);
 	}
+	
+	public static void clearCookie() {
+		ssoCookie = null;
+	}
 }
